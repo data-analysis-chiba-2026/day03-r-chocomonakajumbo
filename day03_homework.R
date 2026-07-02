@@ -11,6 +11,8 @@
 
 answer_0 <- 365 * 5
 
+
+
 # 1. Let's use R to calculate body mass index (BMI)
 #
 # The formula for BMI is weight divided by the square of height,
@@ -27,7 +29,9 @@ answer_0 <- 365 * 5
 
 weight_lb <- 160
 height_ft <- 6
-
+weight_kg <- weight_lb * 0.4536
+height_m <- height_ft * 0.3048
+answer_1 <- weight_kg / height_m^2
 
 # 2. The following code has an error. Fix it by editing the code.
 # (You don't need to save a separate answer for this one, just fix the code.)
@@ -40,14 +44,18 @@ volume_ml <- volume_oz * 29.574
 # Save your answer in an object called answer_3
 
 x <- 2
-y <- 3_
+y <- 3
 z <- x + y
 x <- 5
+
+answer_3 <- 5
 
 # 4. The sqrt() function calculates the square root of a number.
 #
 # Use the sqrt() function to calculate the square root of 200, and
 # save your answer in an object called answer_4.
+
+answer_4 <- sqrt(200)
 
 # 5. The seq() function generates sequences of numbers.
 # Its arguments include "from" (the starting number), "to"
@@ -56,6 +64,8 @@ x <- 5
 #
 # Use seq() make a sequence of even numbers starting at 2 and ending at 100, and
 # save your answer in an object called answer_5
+
+answer_5 <- seq(2,100,by=2)
 
 # 6. Make a  (TRUE and FALSE), and save it to an
 #  object called lgl_vec
@@ -70,6 +80,11 @@ x <- 5
 # HINT: use c() to make vectors
 # HINT: characters are always written with quotation marks
 
+lgl_vec <- c(TRUE, FALSE)
+ chr_vec <- c("TRUE", "FALSE")
+ ans_vec <- c(lgl_vec, chr_vec)
+ answer_6 <- typeof(ans_vec)
+
 # 7. R includes some pre-defined vectors, like `letters`:
 letters
 
@@ -79,3 +94,4 @@ letters
 # Save your answer in an object called answer_7
 #
 # HINT: Use `seq()` inside the square brackets
+answer_7 <- letters[seq(2,26)]
