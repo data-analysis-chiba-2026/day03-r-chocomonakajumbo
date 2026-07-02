@@ -28,18 +28,19 @@ answer_0 <- 365 * 5
 weight_lb <- 160
 height_ft <- 6
 
+
 # 2. The following code has an error. Fix it by editing the code.
 # (You don't need to save a separate answer for this one, just fix the code.)
 
 volume_oz <- 130
-volume_ml <- Volume_oz * 29.574
+volume_ml <- volume_oz * 29.574
 
 # 3. What is the value of z after running the following code?
 #
 # Save your answer in an object called answer_3
 
 x <- 2
-y <- 3
+y <- 3_
 z <- x + y
 x <- 5
 
@@ -56,7 +57,7 @@ x <- 5
 # Use seq() make a sequence of even numbers starting at 2 and ending at 100, and
 # save your answer in an object called answer_5
 
-# 6. Make a vector of logical values (TRUE and FALSE), and save it to an
+# 6. Make a  (TRUE and FALSE), and save it to an
 #  object called lgl_vec
 #  Next, make vector of character values, and save it to an object
 #  called called chr_vec
